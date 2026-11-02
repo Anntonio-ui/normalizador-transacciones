@@ -1,0 +1,56 @@
+{
+  "revision_estudiante_pendiente": false,
+  "monedas": [
+    "USD",
+    "EUR"
+  ],
+  "permitir_cero": false,
+  "permitir_negativos": false,
+  "duplicados": "rechazar_por_fuente_e_id",
+  "zona_sin_offset": "-06:00",
+  "estados": {
+    "completed": "SUCCESS",
+    "ok": "SUCCESS",
+    "success": "SUCCESS",
+    "failed": "FAILED",
+    "error": "FAILED",
+    "pending": "PENDING",
+    "processing": "PENDING"
+  },
+  "fuentes": {
+    "A": {
+      "id": "id",
+      "monto": "amount",
+      "moneda": "currency",
+      "fecha": "timestamp",
+      "estado": "status",
+      "divisor": "1",
+      "decimal": ".",
+      "formato": "%Y-%m-%d %H:%M:%S"
+    },
+    "B": {
+      "id": "transaction_id",
+      "monto": "total",
+      "moneda": "currency_code",
+      "fecha": "created_at",
+      "estado": "state",
+      "divisor": "100",
+      "decimal": ".",
+      "formato": "%d/%m/%Y %H:%M"
+    },
+    "C": {
+      "id": "ref",
+      "monto": "amount",
+      "moneda": null,
+      "fecha": "date",
+      "estado": "result",
+      "divisor": "1",
+      "decimal": ",",
+      "formato": "ISO8601",
+      "simbolos": {
+        "€": "EUR",
+        "$": "USD"
+      }
+    }
+  }
+}
